@@ -1,6 +1,6 @@
-from point import Point
+from .point import Point
 
-from rectangle import Rectangle
+from .rectangle import Rectangle
 
 class RTree:
     head: Rectangle
