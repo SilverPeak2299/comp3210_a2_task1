@@ -11,4 +11,5 @@ class Point:
         self.y = y
 
     def dist(self, point):
+        """Returns the euclidian distance from this point to the given point"""
         return math.sqrt((self.x - point.x)**2 + (self.y - point.y)**2)

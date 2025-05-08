@@ -7,14 +7,22 @@ class RTree:
     max_size: int
 
     def __init__(self, max_size: int = 3):
+        """Inits the tree, takes an argument of max size for the b value,
+        this b value deafults to 3
+        """
         self.max_size = max_size
 
         self.head = Rectangle(self.max_size)
         self.head.insert_rect(Rectangle(self.max_size))
 
     def insert(self, id, x, y):
+        """inserts a point, constantly makes new head nodes and inserts the return into the new head,
+        means newer nodes are closer to the top of the tree
+        """
+
         p = Point(id, x, y)
         split = self.head.insert(p)
+
         if split is not None:
             new_head = Rectangle(self.head.max_size)
             new_head.insert_rect(self.head)
@@ -22,19 +30,9 @@ class RTree:
             self.head = new_head            
             
 
-    def find_best_rect(self, point: Point, current_rect: Rectangle = None, parent: Rectangle = None):
-        if current_rect is None:
-            current_rect = self.head
-
-        if current_rect.is_leaf():
-            return current_rect, parent
-
-        best_rect = min(current_rect.data_list, key=lambda r: r.test_area(point))
-
-        return self.find_best_rect(point, best_rect, current_rect)  
-      
     #chat gpt generated to visualise and validate tree structure - I was sick of looking at debugging traces
     def print_horizontal_tree(self):
+        """Chat gpt generated to visualise tree structure"""
         from collections import deque
 
         def get_label(obj):

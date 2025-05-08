@@ -24,24 +24,39 @@ class Rectangle:
 		self.max_size = max_size
 
 	def insert(self, data):
+		"""Recursive function that inserts new data into the tree,
+		recursivly inserts any new rects that where made from a split"""
+
+		# check if valid point insert position
 		if self.is_leaf():
 			return self.insert_point(data)
 
+		# Finding the rectangle that will have the samllest area once current data is inserted
 		best_rect = min(self.data_list, key=lambda r: r.test_area(data))
+
+		# Inserting the rect into the tree, at the best place
 		possible_new_rect = best_rect.insert(data)
 
+		# If a split occured insert the new rectangle that was genrated
 		if possible_new_rect is not None:
 			return self.insert_rect(possible_new_rect)
 
+		#reset the rect size
 		self.resize()
 		return None
 
 	def insert_rect(self, data):
+			"""Inserts a rectangle into itself, 
+			in case of split it returns the new rectangle generated ready for insertion
+			"""
+
 			self.data_list.append(data)
 			self.resize()
 
 			#check if split is nessasry
 			if len(self.data_list) > self.max_size:
+
+				#Split
 				max_dist = 0
 				max_tuple = ()
 
@@ -65,6 +80,7 @@ class Rectangle:
 
 				self.resize()
 					 
+				#inserting old values in the box that is smallest with thier presence
 				for rect in to_insert:
 					a1 = self.test_area(rect)
 					a2 = new_rect.test_area(rect)
@@ -74,15 +90,22 @@ class Rectangle:
 					
 					else:
 						new_rect.insert_rect(rect)
-				
+
+				#returning the newly generated rectangle
 				return new_rect
 			
 	def insert_point(self, data):
-		#Assuming data is a point
+		"""inserts a point into itself, 
+		in case of split it returns the new rectangle generated ready for insertion
+		"""
+
 		self.data_list.append(data)
 		self.resize()
 
+		# Testing to see if a split is nessecery
 		if len(self.data_list) > self.max_size:
+
+			# Split :(
 			max_dist = 0
 			max_tuple = ()
 
@@ -106,6 +129,7 @@ class Rectangle:
 
 			self.resize()
 
+			#inserting points in the better boxes
 			for p in to_insert:
 				a1 = self.test_area(p)
 				a2 = new_rect.test_area(p)
@@ -120,7 +144,9 @@ class Rectangle:
 
 
 	def resize(self):
+		"calucates the size of the rectangles based on the size of the rectangles / placement of points held within"
 
+		# if the rectangle contains rectangles
 		if isinstance(self.data_list[0], Rectangle):
 			for rect in self.data_list:
 				if rect.x_min < self.x_min:
@@ -137,7 +163,7 @@ class Rectangle:
 
 			return
 			
-		#Checking against a datapoint
+		# If the rectangle contains rectangles
 		for point in self.data_list:
 			if point.x < self.x_min:
 					self.x_min = point.x
@@ -152,9 +178,13 @@ class Rectangle:
 					self.y_max = point.y
 
 	def area(self):
+		"returns the area idk why I made this but I used it for checking the inital stuff was working"
 		return (self.x_max - self.x_min) * (self.y_max - self.y_min)
 	
 	def test_area(self, data):
+		"non destructive form of resize that takes in a possible rect/point and returns what the new area would be"
+		
+		# if adding a rectangle
 		if isinstance(data, Rectangle):
 			x_min = min(self.x_min, data.x_min)
 			x_max = max(self.x_max, data.x_max)
@@ -171,27 +201,25 @@ class Rectangle:
 
 		return (abs(x_max - x_min)) * (abs(y_max - y_min))
 
-	
-	def include(self, new_rect):
-		self.x_max = max(self.x_max, new_rect.x_max)
-		self.x_min = min(self.x_min, new_rect.x_min)
-		self.y_max = max(self.y_max, new_rect.y_max)
-		self.y_min = min(self.y_min, new_rect.y_min)
 
-	
 	def dist_from(self, x, y):
+		"""Distance from a given point"""
+
 		x = max(self.x_min - x, 0, x - self.x_max)
 		y = max(self.y_min - y, 0, y- self.y_max)
 
 		return math.sqrt(x**2 + y**2)
 	
 	def rect_dist(self, rect) -> float:
+		"distance from a given rectangle"
+
 		x = max(self.x_min - rect.x_max, 0, rect.x_min - self.x_max)
 		y = max(self.y_min - rect.y_max, 0, rect.y_min - self.y_max)
 
 		return math.sqrt(x**2 + y**2)
 	
 	def is_leaf(self):
+		"""does this recttangle contain points?"""
 		try:
 			return not isinstance(self.data_list[0], Rectangle)
 		
