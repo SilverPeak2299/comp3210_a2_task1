@@ -92,6 +92,7 @@ class Rectangle:
 						new_rect.insert_rect(rect)
 
 				#returning the newly generated rectangle
+				self.resize()
 				return new_rect
 			
 	def insert_point(self, data):
@@ -139,7 +140,8 @@ class Rectangle:
 				
 				else:
 					new_rect.insert_point(p)
-					
+				
+			self.resize()	
 			return new_rect
 
 
