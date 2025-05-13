@@ -69,7 +69,32 @@ class RTree:
                 branches = branch_indent + ("|" + " " * (spacing - 1)) * len(labels)
                 print(branches)
 
+    def print_vertical_tree(self):
+        """Print the tree in a vertical style using ASCII branches."""
 
+        def get_label(node):
+            if hasattr(node, 'is_leaf') and not node.is_leaf():
+                return f"Rect [{node.x_min},{node.y_min}]-[{node.x_max},{node.y_max}]"
+            elif hasattr(node, 'is_leaf') and node.is_leaf():
+                return f"Leaf [{node.x_min},{node.y_min}]-[{node.x_max},{node.y_max}]"
+            else:
+                return f"({node.x},{node.y})"
+
+        def recurse(node, prefix="", is_last=True, is_root=False):
+            label = get_label(node)
+            if is_root:
+                print(f"{label}                  <-- Root")
+            else:
+                connector = "└── " if is_last else "├── "
+                print(f"{prefix}{connector}{label}")
+
+            if hasattr(node, 'data_list'):
+                new_prefix = prefix + ("    " if is_last else "│   ")
+                for i, child in enumerate(node.data_list):
+                    last = (i == len(node.data_list) - 1)
+                    recurse(child, new_prefix, last)
+
+        recurse(self.head, is_root=True)
         
 if __name__ == "__main__":
     tree = RTree(5)

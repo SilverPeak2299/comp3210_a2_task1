@@ -18,7 +18,7 @@ def main():
     with open("./output/best_first_rtree.pkl", "wb") as f:
         pickle.dump(rtree, f)
 
-
+    rtree.print_vertical_tree()
     print(f"Time to generate rtree: {round(time.time() - start_time, 4)} seconds")
 
 
