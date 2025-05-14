@@ -35,7 +35,10 @@ def search(location: tuple, datapoints: list) -> tuple:
 
         if distance(location, x, y) < distance(location, best[1], best[2]):
             best = (id, x, y)
-
+            
+    if best is None:
+        raise Exception("returning best is none -- :(")
+    
     return best
 
         
