@@ -1,7 +1,6 @@
 import math
-from .Point import Point
 
-B = 4  # Maximum number of entries per node
+B = 6  # Maximum number of entries per node
 
 class RTreeNode:
     def __init__(self, is_leaf=True):

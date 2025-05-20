@@ -17,14 +17,14 @@ class PriorityQueue:
             return
 
         #Inserting into the start of the list
-        if (dist < self.head.dist):
+        if (dist <= self.head.dist):
             self.head = Node(dist= dist, next= self.head, data= data)
             return
             
         prev_node = self.head
         curr_node = self.head.next
         
-        while (curr_node is not None and curr_node.dist < dist):
+        while (curr_node is not None and curr_node.dist <= dist):
             prev_node = prev_node.next
             curr_node = curr_node.next
             
