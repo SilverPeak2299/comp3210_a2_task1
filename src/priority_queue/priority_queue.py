@@ -1,13 +1,16 @@
-from node import Node
+from .node import Node
 
 class PriorityQueue:
     head: Node
+    size: int
     
     def __init__(self, head:Node = None):
         self.head = head
+        self.size = 0
     
     
-    def insert(self, dist:float, data):        
+    def insert(self, dist:float, data):
+        self.size += 1
         #If the list is empty
         if self.head is None:
             self.head = Node(dist= dist, data= data)
@@ -29,12 +32,21 @@ class PriorityQueue:
         
         
     def pop(self):
+        self.size -= 1
+        
         if (self.head is None):
             raise Exception("list is empty")
             
         data = self.head.data
         self.head = self.head.next
         return data
+        
+    def print_queue(self):
+        current_node = self.head
+        while current_node is not None:
+            print(f"{current_node.dist}    {current_node.data}")
+            current_node = current_node.next
+
         
             
         
@@ -49,10 +61,6 @@ if __name__ == "__main__":
     queue.insert(5, "node 4")
     queue.insert(1, "node 5")
     
-    current_node = queue.head
-    while current_node is not None:
-        print(current_node.dist)
-        current_node = current_node.next
         
     print(queue.pop())
     print(queue.pop())

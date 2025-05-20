@@ -1,114 +1,206 @@
-from .point import Point
+import math
+from .Point import Point
 
-from .rectangle import Rectangle
+B = 4  # Maximum number of entries per node
+
+class RTreeNode:
+    def __init__(self, is_leaf=True):
+        """
+        Initialize an R-Tree node.
+
+        Args:
+            is_leaf (bool): Whether this node is a leaf node.
+        """
+        self.is_leaf = is_leaf
+        self.entries = []  # Each entry is either a point or a child node with MBR
+        self.children = []  # Used if not a leaf
+        self.mbr = None  # Minimum Bounding Rectangle (x_min, y_min, x_max, y_max)
+
+    def compute_mbr(self):
+        """
+        Recompute the MBR (Minimum Bounding Rectangle) for this node based on entries.
+        """
+        if self.is_leaf:
+            coords = [(p.x, p.y) for p in self.entries]
+        else:
+            coords = [child.mbr for child in self.children]
+
+        x_coords = [x for pair in coords for x in pair[::2]]
+        y_coords = [y for pair in coords for y in pair[1::2]]
+        self.mbr = (min(x_coords), min(y_coords), max(x_coords), max(y_coords))
+    
+    def min_dist_to_point(self, qx, qy):
+        """
+        Compute the minimum Euclidean distance from the given point to this node's MBR.
+    
+        Args:
+            qx (float): X-coordinate of the query point.
+            qy (float): Y-coordinate of the query point.
+    
+        Returns:
+            float: Minimum distance from the point to the node's MBR.
+        """
+        x_min, y_min, x_max, y_max = self.mbr
+    
+        cx = max(x_min, min(qx, x_max))
+        cy = max(y_min, min(qy, y_max))
+    
+        # Euclidean distance to the closest point in the MBR
+        return math.hypot(qx - cx, qy - cy)
 
 class RTree:
-    head: Rectangle
-    max_size: int
+    def __init__(self):
+        """Initialize the R-Tree with an empty root node."""
+        self.root = RTreeNode()
 
-    def __init__(self, max_size: int = 3):
-        """Inits the tree, takes an argument of max size for the b value,
-        this b value deafults to 3
+    def insert(self, node, point):
         """
-        self.max_size = max_size
+        Insert a point into the R-Tree, starting at the given node.
 
-        self.head = Rectangle(self.max_size)
-        self.head.insert_rect(Rectangle(self.max_size))
-
-    def insert(self, id, x, y):
-        """inserts a point, constantly makes new head nodes and inserts the return into the new head,
-        means newer nodes are closer to the top of the tree
+        Args:
+            node (RTreeNode): The node to begin insertion.
+            point (Point): The point to insert.
         """
+        if node.is_leaf:
+            node.entries.append(point)
+            if len(node.entries) > B:
+                self._handle_overflow(node)
+        else:
+            best_child = self._choose_subtree(node, point)
+            self.insert(best_child, point)
 
-        p = Point(id, x, y)
-        split = self.head.insert(p)
+        node.compute_mbr()
 
-        if split is not None:
-            new_head = Rectangle(self.head.max_size)
-            new_head.insert_rect(self.head)
-            new_head.insert_rect(split)
-            self.head = new_head            
-            
+    def _choose_subtree(self, node, point):
+        """
+        Choose the best child node to insert the point into, based on MBR expansion.
 
-    #chat gpt generated to visualise and validate tree structure - I was sick of looking at debugging traces
-    def print_horizontal_tree(self):
-        """Chat gpt generated to visualise tree structure"""
-        from collections import deque
+        Args:
+            node (RTreeNode): Internal node.
+            point (Point): Point to be inserted.
 
-        def get_label(obj):
-            if hasattr(obj, 'is_leaf') and not obj.is_leaf():
-                return f"Rect[{obj.x_min},{obj.y_min}]-[{obj.x_max},{obj.y_max}]"
-            elif hasattr(obj, 'is_leaf') and obj.is_leaf():
-                return f"Leaf[{obj.x_min},{obj.y_min}]-[{obj.x_max},{obj.y_max}]"
-            else:  # Point
-                return f"({obj.x},{obj.y})"
+        Returns:
+            RTreeNode: The chosen child node.
+        """
+        best_child = None
+        min_increase = float('inf')
+        px, py = point.x, point.y
 
-    # Perform a BFS to collect nodes at each level
-        queue = deque([(self.head, 0)])
-        levels = {}
+        for child in node.children:
+            x_min, y_min, x_max, y_max = child.mbr
+            area_before = (x_max - x_min) * (y_max - y_min)
+            new_x_min = min(x_min, px)
+            new_y_min = min(y_min, py)
+            new_x_max = max(x_max, px)
+            new_y_max = max(y_max, py)
+            area_after = (new_x_max - new_x_min) * (new_y_max - new_y_min)
+            increase = area_after - area_before
 
-        while queue:
-            node, depth = queue.popleft()
-            levels.setdefault(depth, []).append(node)
+            if increase < min_increase:
+                min_increase = increase
+                best_child = child
 
-            if hasattr(node, 'data_list'):
-                for child in node.data_list:
-                    queue.append((child, depth + 1))
+        return best_child
 
-    # Print tree level by level
-        max_width = max(len(nodes) for nodes in levels.values())
-        spacing = 12
+    def _handle_overflow(self, node):
+        """
+        Handle overflow in a node by splitting it.
 
-        for depth in sorted(levels):
-            labels = [get_label(node) for node in levels[depth]]
-            indent = " " * ((max_width - len(labels)) * spacing // 2)
-            line = indent + (" " * spacing).join(labels)
-            print(line)
-            if depth < max(levels):
-                branch_indent = " " * ((max_width - len(labels)) * spacing // 2 + spacing // 2 - 1)
-                branches = branch_indent + ("|" + " " * (spacing - 1)) * len(labels)
-                print(branches)
+        Args:
+            node (RTreeNode): The node to split.
+        """
+        if node == self.root:
+            # Special case: split root and create new root
+            left, right = self._split_node(node)
+            new_root = RTreeNode(is_leaf=False)
+            new_root.children = [left, right]
+            new_root.compute_mbr()
+            self.root = new_root
+        else:
+            left, right = self._split_node(node)
+            # Replace the node in its parent with the two new nodes
+            parent = self._find_parent(self.root, node)
+            parent.children.remove(node)
+            parent.children.extend([left, right])
+            if len(parent.children) > B:
+                self._handle_overflow(parent)
 
-    def print_vertical_tree(self):
-        """Print the tree in a vertical style using ASCII branches."""
+    def _split_node(self, node):
+        """
+        Split a node into two nodes.
 
-        def get_label(node):
-            if hasattr(node, 'is_leaf') and not node.is_leaf():
-                return f"Rect [{node.x_min},{node.y_min}]-[{node.x_max},{node.y_max}]"
-            elif hasattr(node, 'is_leaf') and node.is_leaf():
-                return f"Leaf [{node.x_min},{node.y_min}]-[{node.x_max},{node.y_max}]"
-            else:
-                return f"({node.x},{node.y})"
+        Args:
+            node (RTreeNode): Node to split.
 
-        def recurse(node, prefix="", is_last=True, is_root=False):
-            label = get_label(node)
-            if is_root:
-                print(f"{label}                  <-- Root")
-            else:
-                connector = "└── " if is_last else "├── "
-                print(f"{prefix}{connector}{label}")
+        Returns:
+            tuple: Two new RTreeNode instances resulting from the split.
+        """
+        entries = node.entries if node.is_leaf else node.children
+        midpoint = len(entries) // 2
+        group1 = entries[:midpoint]
+        group2 = entries[midpoint:]
 
-            if hasattr(node, 'data_list'):
-                new_prefix = prefix + ("    " if is_last else "│   ")
-                for i, child in enumerate(node.data_list):
-                    last = (i == len(node.data_list) - 1)
-                    recurse(child, new_prefix, last)
+        left = RTreeNode(is_leaf=node.is_leaf)
+        right = RTreeNode(is_leaf=node.is_leaf)
 
-        recurse(self.head, is_root=True)
+        if node.is_leaf:
+            left.entries = group1
+            right.entries = group2
+        else:
+            left.children = group1
+            right.children = group2
+
+        left.compute_mbr()
+        right.compute_mbr()
+
+        return left, right
+
+    def _find_parent(self, current, target):
+        """
+        Find the parent of a given node.
+
+        Args:
+            current (RTreeNode): Current node in traversal.
+            target (RTreeNode): Node whose parent is being searched.
+
+        Returns:
+            RTreeNode: The parent node of the target.
+        """
+        if current.is_leaf:
+            return None
+
+        for child in current.children:
+            if child == target:
+                return current
+            parent = self._find_parent(child, target)
+            if parent:
+                return parent
+
+        return None
         
-if __name__ == "__main__":
-    tree = RTree(5)
-    tree.insert(1, 9, 2)
-    tree.insert(2, 5, 4)
-    tree.insert(3, 6, 7)
-    tree.insert(4, 8, 6)
-    tree.insert(5, 1, 9)
-    tree.insert(6, 4, 7)
-    tree.insert(7, 2, 5)
-    tree.insert(8, 1, 4)
-    tree.insert(9, 4, 7)
-    tree.insert(10, 6, 2)
-    tree.print_horizontal_tree()
     
-    
-    
+    def print_rtree_structure(self, node, prefix=""):
+        """
+    Recursively prints the R-tree structure with box-drawing characters.
+
+    Args:
+        node (RTreeNode): The root or current node of the R-tree.
+        prefix (str): Used internally to manage indentation during recursion.
+        """
+        def mbr_str(mbr):
+            x1, y1, x2, y2 = mbr
+            return f"[{x1:.2f},{y1:.2f}]-[{x2:.2f},{y2:.2f}]"
+
+        node_desc = "Leaf" if node.is_leaf else "Rect"
+        print(f"{prefix}{node_desc} {mbr_str(node.mbr)}")
+
+        if not node.is_leaf:
+            n = len(node.children)
+            for i, child in enumerate(node.children):
+                is_last = (i == n - 1)
+                branch = "└── " if is_last else "├── "
+                extension = "    " if is_last else "│   "
+                self.print_rtree_structure(child, prefix + branch)
+            else:
+                # You can include point-level details if you want
+                pass  # Or add: for pt in node.entries: print(f"{prefix}    • Point: ({pt['x']}, {pt['y']})")
