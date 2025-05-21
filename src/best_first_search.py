@@ -15,7 +15,7 @@ def main():
     
    
     start_time = time.time()
-    with open("./output/best_first_seach_output.txt", "w") as output:
+    with open("./output/best_first_search_output.txt", "w") as output:
         for id, x, y in queries:
             
             best = best_first_search(rtree, Point(id, float(x), float(y)))
