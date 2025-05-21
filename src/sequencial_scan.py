@@ -41,7 +41,6 @@ def search(location: tuple, datapoints: list) -> tuple:
     
     return best
 
-        
 
 def distance(location: tuple, x:float, y:float) -> float:
     """Returns the euclidan distance between 2 locations"""
@@ -49,8 +48,6 @@ def distance(location: tuple, x:float, y:float) -> float:
     y_dist = abs(location[1] - y)
 
     return math.sqrt(x_dist**2 + y_dist**2)
-
-
 
 
 def read_csv(file_path: str) -> list:
@@ -69,9 +66,6 @@ def read_csv(file_path: str) -> list:
             result.append((id, float(x) ,float(y)))
 
     return result
-
-    
-            
 
 
 if __name__ == "__main__":

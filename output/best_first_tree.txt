@@ -1,1 +1,0 @@
-Time to generate rtree: 6.5274 seconds

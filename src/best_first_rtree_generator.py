@@ -15,7 +15,7 @@ def main():
         for id, x, y in csv_reader:
             rtree.insert(rtree.root, {"id": int(id),"x": float(x),"y": float(y)})
     
-    with open("./output/best_first_rtree.pkl", "wb") as f:
+    with open("./output/rtree_binaries/best_first_rtree.pkl", "wb") as f:
         pickle.dump(rtree, f)
 
     print(f"Time to generate rtree: {round(time.time() - start_time, 4)} seconds")
