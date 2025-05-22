@@ -198,4 +198,4 @@ id= 20124 x= 29.56 y= 82.76 for query <built-in function id>
 id= 95196 x= 9.99 y= 93.36 for query <built-in function id>
 id= 111350 x= 16.29 y= 152.71 for query <built-in function id>
 id= 88404 x= 42.17 y= 137.12 for query <built-in function id>
-The total runtime was 0.15473079681396484 seconds, Averaging 0.0007736539840698242 seconds per query
+The total runtime was 0.16040587425231934 seconds, Averaging 0.0008020293712615967 seconds per query

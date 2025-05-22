@@ -10,7 +10,7 @@ def main():
     resturants = read_csv("./data/restaurant_dataset.txt")
     x_max = max(resturants, key= lambda x: x[1])
     x_min = min(resturants, key= lambda x: x[1])
-    dx = x_max[1] - x_min[1]
+    dx = x_max[1] + x_min[1]
  
     middle_point = dx/2
     
