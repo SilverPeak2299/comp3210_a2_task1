@@ -6,13 +6,11 @@ from sequencial_scan import read_csv
 
 
 def main():
-    #finding the midpoint to split the rtree on
+    #finding the median x point to split the rtree on
     resturants = read_csv("./data/restaurant_dataset.txt")
-    x_max = max(resturants, key= lambda x: x[1])
-    x_min = min(resturants, key= lambda x: x[1])
-    dx = x_max[1] + x_min[1]
+    sorted_resturants = sorted(resturants, key= lambda x: x[1])
  
-    middle_point = dx/2
+    middle_point = sorted_resturants[len(sorted_resturants)//2][1]
     
     rtree_left = RTree()
     rtree_right = RTree()

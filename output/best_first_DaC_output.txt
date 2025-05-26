@@ -1,201 +1,201 @@
-id= 121862 x= 47.1 y= 128.88 for query <built-in function id>
-id= 12827 x= 51.7 y= 125.64 for query <built-in function id>
-id= 113975 x= 21.16 y= 106.06 for query <built-in function id>
-id= 149159 x= 5.98 y= 132.47 for query <built-in function id>
-id= 80523 x= 65.16 y= 94.8 for query <built-in function id>
-id= 106703 x= 89.2 y= 114.91 for query <built-in function id>
-id= 8816 x= 89.43 y= 95.19 for query <built-in function id>
-id= 59112 x= 3.63 y= 125.98 for query <built-in function id>
-id= 4586 x= 22.23 y= 97.01 for query <built-in function id>
-id= 67804 x= 47.53 y= 134.01 for query <built-in function id>
-id= 11425 x= 69.25 y= 126.55 for query <built-in function id>
-id= 85208 x= 22.36 y= 141.73 for query <built-in function id>
-id= 100197 x= 34.5 y= 93.48 for query <built-in function id>
-id= 3931 x= 88.41 y= 138.15 for query <built-in function id>
-id= 64709 x= 77.65 y= 86.14 for query <built-in function id>
-id= 97516 x= 23.33 y= 144.89 for query <built-in function id>
-id= 74801 x= 55.94 y= 102.88 for query <built-in function id>
-id= 58974 x= 54.6 y= 120.31 for query <built-in function id>
-id= 93541 x= 39.85 y= 138.04 for query <built-in function id>
-id= 55217 x= 41.51 y= 123.95 for query <built-in function id>
-id= 89802 x= 43.5 y= 97.81 for query <built-in function id>
-id= 26459 x= 66.22 y= 102.91 for query <built-in function id>
-id= 71319 x= 74.27 y= 107.7 for query <built-in function id>
-id= 16258 x= 64.66 y= 133.11 for query <built-in function id>
-id= 49180 x= 35.41 y= 159.52 for query <built-in function id>
-id= 31056 x= 38.65 y= 85.62 for query <built-in function id>
-id= 144769 x= 1.23 y= 88.48 for query <built-in function id>
-id= 80173 x= 58.16 y= 98.45 for query <built-in function id>
-id= 140092 x= 62.45 y= 124.85 for query <built-in function id>
-id= 48696 x= 87.76 y= 94.84 for query <built-in function id>
-id= 97961 x= 39.0 y= 99.06 for query <built-in function id>
-id= 146638 x= 36.87 y= 101.28 for query <built-in function id>
-id= 124116 x= 24.67 y= 147.83 for query <built-in function id>
-id= 11871 x= 58.14 y= 126.62 for query <built-in function id>
-id= 1907 x= 27.25 y= 158.75 for query <built-in function id>
-id= 26839 x= 16.99 y= 153.4 for query <built-in function id>
-id= 69403 x= 74.52 y= 142.35 for query <built-in function id>
-id= 50737 x= 28.4 y= 110.97 for query <built-in function id>
-id= 133145 x= 6.53 y= 121.05 for query <built-in function id>
-id= 71826 x= 80.54 y= 94.86 for query <built-in function id>
-id= 99696 x= 71.43 y= 88.06 for query <built-in function id>
-id= 30380 x= 36.68 y= 158.72 for query <built-in function id>
-id= 93912 x= 18.83 y= 104.32 for query <built-in function id>
-id= 118810 x= 6.47 y= 116.53 for query <built-in function id>
-id= 134922 x= 62.26 y= 119.4 for query <built-in function id>
-id= 6045 x= 52.87 y= 158.06 for query <built-in function id>
-id= 71161 x= 46.88 y= 158.28 for query <built-in function id>
-id= 94122 x= 7.03 y= 136.4 for query <built-in function id>
-id= 148370 x= 36.35 y= 119.25 for query <built-in function id>
-id= 87582 x= 47.79 y= 140.3 for query <built-in function id>
-id= 47805 x= 54.77 y= 87.82 for query <built-in function id>
-id= 101159 x= 86.88 y= 88.44 for query <built-in function id>
-id= 95672 x= 41.58 y= 146.03 for query <built-in function id>
-id= 74086 x= 79.46 y= 139.12 for query <built-in function id>
-id= 27560 x= 81.64 y= 156.57 for query <built-in function id>
-id= 4431 x= 56.41 y= 127.31 for query <built-in function id>
-id= 9647 x= 6.64 y= 142.37 for query <built-in function id>
-id= 117167 x= 5.87 y= 144.89 for query <built-in function id>
-id= 105139 x= 20.7 y= 146.39 for query <built-in function id>
-id= 66292 x= 4.82 y= 91.37 for query <built-in function id>
-id= 149408 x= 3.82 y= 111.1 for query <built-in function id>
-id= 16899 x= 81.14 y= 87.6 for query <built-in function id>
-id= 35997 x= 72.95 y= 142.66 for query <built-in function id>
-id= 91403 x= 72.56 y= 153.24 for query <built-in function id>
-id= 134695 x= 2.69 y= 148.05 for query <built-in function id>
-id= 129295 x= 56.06 y= 135.69 for query <built-in function id>
-id= 59394 x= 16.1 y= 125.49 for query <built-in function id>
-id= 40756 x= 26.46 y= 99.62 for query <built-in function id>
-id= 32004 x= 20.29 y= 124.97 for query <built-in function id>
-id= 66829 x= 16.14 y= 148.25 for query <built-in function id>
-id= 80838 x= 84.84 y= 89.61 for query <built-in function id>
-id= 88313 x= 44.84 y= 126.55 for query <built-in function id>
-id= 112458 x= 27.35 y= 135.3 for query <built-in function id>
-id= 131135 x= 52.74 y= 135.4 for query <built-in function id>
-id= 94291 x= 87.31 y= 157.4 for query <built-in function id>
-id= 149141 x= 79.67 y= 120.11 for query <built-in function id>
-id= 131978 x= 26.61 y= 94.99 for query <built-in function id>
-id= 148520 x= 17.84 y= 102.66 for query <built-in function id>
-id= 68021 x= 40.05 y= 145.5 for query <built-in function id>
-id= 58125 x= 28.51 y= 160.13 for query <built-in function id>
-id= 60052 x= 59.78 y= 109.48 for query <built-in function id>
-id= 118097 x= 41.76 y= 137.98 for query <built-in function id>
-id= 94339 x= 6.28 y= 118.22 for query <built-in function id>
-id= 17778 x= 21.58 y= 141.96 for query <built-in function id>
-id= 55501 x= 41.6 y= 110.55 for query <built-in function id>
-id= 98252 x= 55.19 y= 127.77 for query <built-in function id>
-id= 885 x= 62.42 y= 117.25 for query <built-in function id>
-id= 27549 x= 55.36 y= 125.8 for query <built-in function id>
-id= 70790 x= 24.52 y= 153.77 for query <built-in function id>
-id= 29587 x= 35.9 y= 136.05 for query <built-in function id>
-id= 65809 x= 31.09 y= 105.45 for query <built-in function id>
-id= 89900 x= 75.56 y= 136.84 for query <built-in function id>
-id= 102235 x= 71.21 y= 103.9 for query <built-in function id>
-id= 130670 x= 38.1 y= 81.94 for query <built-in function id>
-id= 120555 x= 5.47 y= 83.48 for query <built-in function id>
-id= 67808 x= 4.58 y= 158.62 for query <built-in function id>
-id= 54909 x= 18.61 y= 89.04 for query <built-in function id>
-id= 96707 x= 51.08 y= 145.93 for query <built-in function id>
-id= 119230 x= 51.3 y= 108.72 for query <built-in function id>
-id= 49849 x= 48.57 y= 91.45 for query <built-in function id>
-id= 99631 x= 68.65 y= 134.89 for query <built-in function id>
-id= 100546 x= 67.36 y= 134.64 for query <built-in function id>
-id= 79449 x= 50.07 y= 152.52 for query <built-in function id>
-id= 24999 x= 34.75 y= 97.74 for query <built-in function id>
-id= 51357 x= 55.32 y= 113.61 for query <built-in function id>
-id= 35778 x= 17.3 y= 141.64 for query <built-in function id>
-id= 27114 x= 5.1 y= 93.62 for query <built-in function id>
-id= 27895 x= 4.6 y= 106.91 for query <built-in function id>
-id= 140242 x= 62.09 y= 80.45 for query <built-in function id>
-id= 7058 x= 30.85 y= 126.36 for query <built-in function id>
-id= 53084 x= 75.72 y= 114.24 for query <built-in function id>
-id= 73791 x= 32.79 y= 150.03 for query <built-in function id>
-id= 91885 x= 54.91 y= 156.53 for query <built-in function id>
-id= 39504 x= 22.12 y= 93.67 for query <built-in function id>
-id= 104805 x= 3.14 y= 133.61 for query <built-in function id>
-id= 13450 x= 25.86 y= 113.02 for query <built-in function id>
-id= 138634 x= 46.09 y= 117.72 for query <built-in function id>
-id= 71016 x= 7.92 y= 151.39 for query <built-in function id>
-id= 103920 x= 74.39 y= 123.71 for query <built-in function id>
-id= 11991 x= 33.91 y= 84.88 for query <built-in function id>
-id= 12640 x= 85.11 y= 92.78 for query <built-in function id>
-id= 97757 x= 44.38 y= 157.83 for query <built-in function id>
-id= 126879 x= 36.06 y= 98.52 for query <built-in function id>
-id= 77107 x= 55.35 y= 137.47 for query <built-in function id>
-id= 149433 x= 50.22 y= 151.77 for query <built-in function id>
-id= 67449 x= 35.63 y= 136.97 for query <built-in function id>
-id= 50970 x= 0.09 y= 96.55 for query <built-in function id>
-id= 25154 x= 18.87 y= 87.65 for query <built-in function id>
-id= 18407 x= 32.78 y= 93.67 for query <built-in function id>
-id= 45180 x= 67.54 y= 124.03 for query <built-in function id>
-id= 99433 x= 53.08 y= 97.36 for query <built-in function id>
-id= 146322 x= 7.24 y= 105.62 for query <built-in function id>
-id= 120095 x= 23.58 y= 117.73 for query <built-in function id>
-id= 29841 x= 20.56 y= 97.7 for query <built-in function id>
-id= 84388 x= 63.17 y= 148.02 for query <built-in function id>
-id= 142229 x= 65.22 y= 88.06 for query <built-in function id>
-id= 57885 x= 11.01 y= 87.4 for query <built-in function id>
-id= 17447 x= 30.26 y= 85.06 for query <built-in function id>
-id= 17408 x= 69.76 y= 112.08 for query <built-in function id>
-id= 55530 x= 4.82 y= 149.63 for query <built-in function id>
-id= 36656 x= 71.59 y= 137.11 for query <built-in function id>
-id= 51437 x= 51.74 y= 94.22 for query <built-in function id>
-id= 100463 x= 54.99 y= 128.78 for query <built-in function id>
-id= 98359 x= 71.0 y= 106.88 for query <built-in function id>
-id= 23722 x= 23.31 y= 142.29 for query <built-in function id>
-id= 1711 x= 13.26 y= 142.76 for query <built-in function id>
-id= 60933 x= 16.46 y= 131.55 for query <built-in function id>
-id= 89825 x= 66.04 y= 122.74 for query <built-in function id>
-id= 148956 x= 59.4 y= 120.07 for query <built-in function id>
-id= 99524 x= 87.88 y= 105.48 for query <built-in function id>
-id= 51186 x= 2.29 y= 156.78 for query <built-in function id>
-id= 149006 x= 6.84 y= 86.09 for query <built-in function id>
-id= 97764 x= 26.43 y= 155.82 for query <built-in function id>
-id= 16507 x= 12.8 y= 127.93 for query <built-in function id>
-id= 42487 x= 10.66 y= 122.51 for query <built-in function id>
-id= 121191 x= 82.15 y= 134.27 for query <built-in function id>
-id= 68400 x= 76.21 y= 119.62 for query <built-in function id>
-id= 68553 x= 75.21 y= 116.23 for query <built-in function id>
-id= 112689 x= 25.84 y= 93.22 for query <built-in function id>
-id= 33077 x= 78.93 y= 125.81 for query <built-in function id>
-id= 40076 x= 79.13 y= 105.73 for query <built-in function id>
-id= 70679 x= 30.86 y= 110.79 for query <built-in function id>
-id= 125968 x= 78.98 y= 131.99 for query <built-in function id>
-id= 95654 x= 79.98 y= 80.49 for query <built-in function id>
-id= 79944 x= 56.36 y= 94.59 for query <built-in function id>
-id= 30779 x= 4.9 y= 92.33 for query <built-in function id>
-id= 18078 x= 15.95 y= 83.65 for query <built-in function id>
-id= 108692 x= 60.09 y= 146.14 for query <built-in function id>
-id= 76992 x= 4.09 y= 139.27 for query <built-in function id>
-id= 104923 x= 65.19 y= 116.58 for query <built-in function id>
-id= 31741 x= 87.05 y= 128.81 for query <built-in function id>
-id= 128220 x= 18.42 y= 147.17 for query <built-in function id>
-id= 11253 x= 32.43 y= 123.77 for query <built-in function id>
-id= 138356 x= 88.23 y= 89.39 for query <built-in function id>
-id= 132299 x= 27.75 y= 149.06 for query <built-in function id>
-id= 92206 x= 58.74 y= 118.11 for query <built-in function id>
-id= 6299 x= 80.79 y= 153.9 for query <built-in function id>
-id= 147420 x= 49.66 y= 88.42 for query <built-in function id>
-id= 13825 x= 26.67 y= 111.47 for query <built-in function id>
-id= 76398 x= 81.87 y= 159.5 for query <built-in function id>
-id= 10333 x= 45.52 y= 125.7 for query <built-in function id>
-id= 128847 x= 3.1 y= 87.72 for query <built-in function id>
-id= 110202 x= 17.06 y= 113.54 for query <built-in function id>
-id= 82154 x= 31.74 y= 116.26 for query <built-in function id>
-id= 89695 x= 30.68 y= 100.01 for query <built-in function id>
-id= 47748 x= 58.56 y= 143.23 for query <built-in function id>
-id= 132446 x= 35.91 y= 157.01 for query <built-in function id>
-id= 44236 x= 87.96 y= 107.54 for query <built-in function id>
-id= 148783 x= 36.67 y= 134.46 for query <built-in function id>
-id= 32601 x= 21.28 y= 110.62 for query <built-in function id>
-id= 145588 x= 33.48 y= 92.56 for query <built-in function id>
-id= 147008 x= 31.51 y= 125.93 for query <built-in function id>
-id= 130666 x= 34.59 y= 103.1 for query <built-in function id>
-id= 73377 x= 40.74 y= 120.33 for query <built-in function id>
-id= 60924 x= 66.89 y= 83.46 for query <built-in function id>
-id= 56471 x= 28.37 y= 151.7 for query <built-in function id>
-id= 20124 x= 29.56 y= 82.76 for query <built-in function id>
-id= 95196 x= 9.99 y= 93.36 for query <built-in function id>
-id= 111350 x= 16.29 y= 152.71 for query <built-in function id>
-id= 88404 x= 42.17 y= 137.12 for query <built-in function id>
-The total runtime was 0.16040587425231934 seconds, Averaging 0.0008020293712615967 seconds per query
+id= 128945 x= 47.01 y= 128.5 for query 1
+id= 12827 x= 51.7 y= 125.64 for query 2
+id= 113975 x= 21.16 y= 106.06 for query 3
+id= 16073 x= 5.89 y= 132.7 for query 4
+id= 120018 x= 64.71 y= 95.14 for query 5
+id= 48825 x= 89.7 y= 114.58 for query 6
+id= 143080 x= 89.43 y= 95.45 for query 7
+id= 133441 x= 3.77 y= 126.28 for query 8
+id= 57525 x= 22.14 y= 97.9 for query 9
+id= 37373 x= 47.66 y= 134.4 for query 10
+id= 85786 x= 69.4 y= 126.74 for query 11
+id= 85208 x= 22.36 y= 141.73 for query 12
+id= 19502 x= 34.52 y= 93.12 for query 13
+id= 136841 x= 88.8 y= 137.9 for query 14
+id= 32693 x= 78.05 y= 86.74 for query 15
+id= 141340 x= 23.17 y= 144.85 for query 16
+id= 74801 x= 55.94 y= 102.88 for query 17
+id= 20573 x= 54.41 y= 120.1 for query 18
+id= 66093 x= 40.21 y= 138.03 for query 19
+id= 34450 x= 40.16 y= 124.04 for query 20
+id= 89802 x= 43.5 y= 97.81 for query 21
+id= 71792 x= 66.08 y= 102.62 for query 22
+id= 71319 x= 74.27 y= 107.7 for query 23
+id= 84851 x= 64.57 y= 133.12 for query 24
+id= 6231 x= 35.37 y= 159.57 for query 25
+id= 105021 x= 38.54 y= 85.63 for query 26
+id= 66779 x= 1.16 y= 88.68 for query 27
+id= 56266 x= 58.53 y= 98.4 for query 28
+id= 43931 x= 61.91 y= 124.66 for query 29
+id= 141299 x= 87.77 y= 94.76 for query 30
+id= 20597 x= 39.29 y= 99.2 for query 31
+id= 103709 x= 36.85 y= 101.17 for query 32
+id= 124116 x= 24.67 y= 147.83 for query 33
+id= 11871 x= 58.14 y= 126.62 for query 34
+id= 61821 x= 27.28 y= 158.43 for query 35
+id= 145398 x= 17.04 y= 153.3 for query 36
+id= 75857 x= 74.27 y= 142.27 for query 37
+id= 82754 x= 28.55 y= 111.17 for query 38
+id= 115494 x= 6.23 y= 121.6 for query 39
+id= 81424 x= 80.36 y= 94.64 for query 40
+id= 56772 x= 71.76 y= 88.28 for query 41
+id= 1499 x= 35.4 y= 158.78 for query 42
+id= 127219 x= 18.95 y= 103.86 for query 43
+id= 118810 x= 6.47 y= 116.53 for query 44
+id= 98976 x= 62.59 y= 119.57 for query 45
+id= 6045 x= 52.87 y= 158.06 for query 46
+id= 71161 x= 46.88 y= 158.28 for query 47
+id= 65877 x= 6.01 y= 136.29 for query 48
+id= 122653 x= 36.85 y= 119.48 for query 49
+id= 15033 x= 47.53 y= 140.11 for query 50
+id= 47805 x= 54.77 y= 87.82 for query 51
+id= 14333 x= 87.11 y= 88.11 for query 52
+id= 146498 x= 41.39 y= 145.89 for query 53
+id= 48955 x= 79.8 y= 138.83 for query 54
+id= 19166 x= 81.98 y= 156.98 for query 55
+id= 52760 x= 56.18 y= 127.54 for query 56
+id= 9647 x= 6.64 y= 142.37 for query 57
+id= 68731 x= 5.44 y= 144.84 for query 58
+id= 105139 x= 20.7 y= 146.39 for query 59
+id= 56847 x= 5.14 y= 91.26 for query 60
+id= 65273 x= 3.46 y= 111.32 for query 61
+id= 56313 x= 81.42 y= 87.4 for query 62
+id= 71947 x= 73.35 y= 142.84 for query 63
+id= 141017 x= 72.79 y= 153.19 for query 64
+id= 134695 x= 2.69 y= 148.05 for query 65
+id= 88953 x= 56.03 y= 135.84 for query 66
+id= 59394 x= 16.1 y= 125.49 for query 67
+id= 2042 x= 26.85 y= 99.14 for query 68
+id= 4707 x= 20.54 y= 125.32 for query 69
+id= 102273 x= 16.67 y= 148.49 for query 70
+id= 117722 x= 85.0 y= 89.63 for query 71
+id= 112533 x= 44.62 y= 126.61 for query 72
+id= 112458 x= 27.35 y= 135.3 for query 73
+id= 122507 x= 53.43 y= 135.81 for query 74
+id= 117629 x= 87.52 y= 157.49 for query 75
+id= 132999 x= 79.45 y= 120.2 for query 76
+id= 67648 x= 26.69 y= 95.16 for query 77
+id= 81694 x= 18.28 y= 102.57 for query 78
+id= 68021 x= 40.05 y= 145.5 for query 79
+id= 58125 x= 28.51 y= 160.13 for query 80
+id= 44258 x= 60.2 y= 109.55 for query 81
+id= 118097 x= 41.76 y= 137.98 for query 82
+id= 94339 x= 6.28 y= 118.22 for query 83
+id= 91792 x= 20.93 y= 142.42 for query 84
+id= 55501 x= 41.6 y= 110.55 for query 85
+id= 120384 x= 54.67 y= 127.81 for query 86
+id= 83425 x= 62.5 y= 117.53 for query 87
+id= 52342 x= 55.45 y= 125.98 for query 88
+id= 55262 x= 24.18 y= 153.78 for query 89
+id= 29587 x= 35.9 y= 136.05 for query 90
+id= 75618 x= 30.92 y= 105.17 for query 91
+id= 89900 x= 75.56 y= 136.84 for query 92
+id= 59580 x= 70.91 y= 103.69 for query 93
+id= 130670 x= 38.1 y= 81.94 for query 94
+id= 55271 x= 5.29 y= 83.84 for query 95
+id= 134526 x= 4.69 y= 158.5 for query 96
+id= 22718 x= 18.24 y= 89.2 for query 97
+id= 33023 x= 51.47 y= 145.49 for query 98
+id= 68707 x= 51.0 y= 108.7 for query 99
+id= 122761 x= 48.82 y= 91.77 for query 100
+id= 99631 x= 68.65 y= 134.89 for query 101
+id= 33972 x= 67.57 y= 134.58 for query 102
+id= 64227 x= 49.82 y= 152.57 for query 103
+id= 24999 x= 34.75 y= 97.74 for query 104
+id= 35397 x= 55.2 y= 113.61 for query 105
+id= 35778 x= 17.3 y= 141.64 for query 106
+id= 66756 x= 6.08 y= 93.25 for query 107
+id= 27895 x= 4.6 y= 106.91 for query 108
+id= 37074 x= 61.64 y= 80.41 for query 109
+id= 42862 x= 31.05 y= 126.59 for query 110
+id= 120809 x= 75.53 y= 113.9 for query 111
+id= 100158 x= 32.71 y= 149.56 for query 112
+id= 91885 x= 54.91 y= 156.53 for query 113
+id= 57463 x= 21.88 y= 93.46 for query 114
+id= 104805 x= 3.14 y= 133.61 for query 115
+id= 69193 x= 25.65 y= 113.7 for query 116
+id= 29136 x= 46.05 y= 117.94 for query 117
+id= 71016 x= 7.92 y= 151.39 for query 118
+id= 149929 x= 74.59 y= 123.55 for query 119
+id= 35191 x= 33.85 y= 85.0 for query 120
+id= 19288 x= 84.93 y= 91.21 for query 121
+id= 89063 x= 44.79 y= 157.57 for query 122
+id= 120263 x= 36.35 y= 98.7 for query 123
+id= 54707 x= 55.38 y= 137.53 for query 124
+id= 149433 x= 50.22 y= 151.77 for query 125
+id= 25269 x= 35.59 y= 137.67 for query 126
+id= 4281 x= 0.16 y= 96.36 for query 127
+id= 25154 x= 18.87 y= 87.65 for query 128
+id= 92486 x= 32.93 y= 93.84 for query 129
+id= 45180 x= 67.54 y= 124.03 for query 130
+id= 99433 x= 53.08 y= 97.36 for query 131
+id= 102620 x= 7.71 y= 105.77 for query 132
+id= 112683 x= 22.7 y= 117.88 for query 133
+id= 6889 x= 20.73 y= 97.66 for query 134
+id= 45874 x= 63.49 y= 147.62 for query 135
+id= 142229 x= 65.22 y= 88.06 for query 136
+id= 71897 x= 11.21 y= 87.55 for query 137
+id= 136261 x= 30.69 y= 84.79 for query 138
+id= 112135 x= 69.96 y= 112.1 for query 139
+id= 55530 x= 4.82 y= 149.63 for query 140
+id= 22289 x= 71.3 y= 137.2 for query 141
+id= 121732 x= 51.9 y= 94.42 for query 142
+id= 24764 x= 55.06 y= 128.79 for query 143
+id= 98359 x= 71.0 y= 106.88 for query 144
+id= 93715 x= 23.22 y= 142.15 for query 145
+id= 134401 x= 13.58 y= 142.89 for query 146
+id= 44 x= 16.91 y= 132.13 for query 147
+id= 89825 x= 66.04 y= 122.74 for query 148
+id= 89465 x= 59.37 y= 120.31 for query 149
+id= 99524 x= 87.88 y= 105.48 for query 150
+id= 5134 x= 1.73 y= 156.79 for query 151
+id= 149006 x= 6.84 y= 86.09 for query 152
+id= 18386 x= 26.76 y= 155.78 for query 153
+id= 35551 x= 13.09 y= 128.05 for query 154
+id= 83909 x= 10.97 y= 122.99 for query 155
+id= 66967 x= 82.44 y= 134.4 for query 156
+id= 39444 x= 76.86 y= 119.74 for query 157
+id= 68553 x= 75.21 y= 116.23 for query 158
+id= 29481 x= 25.73 y= 93.14 for query 159
+id= 33077 x= 78.93 y= 125.81 for query 160
+id= 122389 x= 78.92 y= 105.64 for query 161
+id= 70679 x= 30.86 y= 110.79 for query 162
+id= 88057 x= 79.01 y= 131.94 for query 163
+id= 27551 x= 80.27 y= 80.59 for query 164
+id= 101346 x= 56.28 y= 94.96 for query 165
+id= 71729 x= 4.32 y= 92.01 for query 166
+id= 55304 x= 16.63 y= 83.61 for query 167
+id= 21174 x= 59.85 y= 146.43 for query 168
+id= 136750 x= 4.2 y= 139.04 for query 169
+id= 127524 x= 65.62 y= 116.83 for query 170
+id= 26497 x= 87.07 y= 129.16 for query 171
+id= 106068 x= 18.6 y= 147.0 for query 172
+id= 83019 x= 32.36 y= 123.63 for query 173
+id= 76795 x= 88.1 y= 89.43 for query 174
+id= 54148 x= 28.14 y= 149.0 for query 175
+id= 90569 x= 58.54 y= 117.73 for query 176
+id= 125432 x= 80.75 y= 153.62 for query 177
+id= 60637 x= 49.69 y= 88.63 for query 178
+id= 105918 x= 27.6 y= 111.67 for query 179
+id= 16887 x= 82.28 y= 159.74 for query 180
+id= 136925 x= 45.57 y= 125.75 for query 181
+id= 128847 x= 3.1 y= 87.72 for query 182
+id= 131822 x= 17.48 y= 113.78 for query 183
+id= 58415 x= 32.21 y= 116.29 for query 184
+id= 89695 x= 30.68 y= 100.01 for query 185
+id= 16994 x= 58.33 y= 143.09 for query 186
+id= 132446 x= 35.91 y= 157.01 for query 187
+id= 1509 x= 88.5 y= 107.48 for query 188
+id= 148783 x= 36.67 y= 134.46 for query 189
+id= 75992 x= 20.97 y= 110.67 for query 190
+id= 50061 x= 33.67 y= 92.53 for query 191
+id= 37975 x= 31.16 y= 125.8 for query 192
+id= 96716 x= 34.54 y= 102.77 for query 193
+id= 41460 x= 40.52 y= 120.17 for query 194
+id= 60924 x= 66.89 y= 83.46 for query 195
+id= 56471 x= 28.37 y= 151.7 for query 196
+id= 6989 x= 29.78 y= 82.9 for query 197
+id= 82671 x= 9.96 y= 93.77 for query 198
+id= 146713 x= 16.71 y= 153.12 for query 199
+id= 23252 x= 41.33 y= 137.33 for query 200
+The total runtime was 0.011713743209838867 seconds, Averaging 5.8568716049194336e-05 seconds per query

@@ -1,7 +1,7 @@
 import sys
 import math
 
-B = 4
+B = 6
 
 class Node(object): #node class
     def __init__(self):
