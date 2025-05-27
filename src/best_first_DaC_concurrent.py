@@ -3,7 +3,7 @@ import multiprocessing as mp
 import time
 import pickle
 from sequencial_scan import read_csv
-from best_first_search import best_first_search
+from best_first_search_array import best_first_search
 
 from rtree.Point import Point
 
