@@ -1,9 +1,8 @@
 import csv
 import pickle
-
 import time
+from data_structures.RTree import RTree
 
-from rtree.RTree_supplied import RTree
 
 def main():
     start_time = time.time()
@@ -12,9 +11,11 @@ def main():
     with open("./data/restaurant_dataset.txt") as f:
         csv_reader = csv.reader(f, delimiter=" ")
 
+        # Inserting each restaurant into the RTree
         for id, x, y in csv_reader:
             rtree.insert(rtree.root, {"id": int(id),"x": float(x),"y": float(y)})
     
+    # Saving the RTree to a binary file
     with open("./output/rtree_binaries/best_first_rtree.pkl", "wb") as f:
         pickle.dump(rtree, f)
 

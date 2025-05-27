@@ -2,6 +2,7 @@ import csv
 from time import time
 import math
 
+
 def main():
     datapoints = read_csv("./data/restaurant_dataset.txt")
     queries = read_csv("./data/query_points.txt")
@@ -23,19 +24,23 @@ def search(location: tuple, datapoints: list) -> tuple:
         Args:
             location (tuple): takes the form of (x, y), the coordiantes of the palce to check
             datapoints (list): the list of datapoints to check against
+            
         Returns:
             tuple: (id, x, y) the closest location to the query point
     """
     best = None
 
+    # checking each datapoint against each query point
     for id, x, y in datapoints:
         if best is None:
             best = (id, x, y)
             continue
 
+        # if the distance is less than the current best, update the best
         if distance(location, x, y) < distance(location, best[1], best[2]):
             best = (id, x, y)
-            
+    
+    # This should never occour    
     if best is None:
         raise Exception("returning best is none -- :(")
     
@@ -43,7 +48,17 @@ def search(location: tuple, datapoints: list) -> tuple:
 
 
 def distance(location: tuple, x:float, y:float) -> float:
-    """Returns the euclidan distance between 2 locations"""
+    """
+    Returns the euclidan distance between 2 locations
+    
+    Args:
+        location (tuple): takes the form of (x, y), the coordiantes of the place to check
+        x (float): the x coordinate of the point to check
+        y (float): the y coordinate of the point to check
+        
+    Returns:
+        float: the euclidan distance between the two points
+    """
     x_dist = abs(location[0] - x)
     y_dist = abs(location[1] - y)
 
@@ -62,6 +77,7 @@ def read_csv(file_path: str) -> list:
     with open(file_path) as file:
         csv_reader = csv.reader(file, delimiter=" ")
 
+        # Appending all datapoints to the list
         for id, x, y in csv_reader:
             result.append((id, float(x) ,float(y)))
 

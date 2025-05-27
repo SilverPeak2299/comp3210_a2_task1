@@ -198,4 +198,4 @@ id= 6989 x= 29.78 y= 82.9 for query 197
 id= 41854 x= 10.03 y= 93.42 for query 198
 id= 146713 x= 16.71 y= 153.12 for query 199
 id= 88404 x= 42.17 y= 137.12 for query 200
-The total runtime was 0.026333093643188477 seconds, Averaging 0.00013166546821594238 seconds per query
+The total runtime was 0.02412867546081543 seconds, Averaging 0.00012064337730407715 seconds per query
