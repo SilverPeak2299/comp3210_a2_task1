@@ -18,7 +18,6 @@ with open("./output/rtree_binaries/DaC_RTree_right.pkl", "rb") as f:
     rtree_right = pickle.load(f)
 
 
-
 def search(batch):
     '''
     Search BF search wrapper function to perform best-first search on a batch of query points.
